@@ -4,7 +4,10 @@ version = "0.1.0"
 authors = ["Federico Stra <stra.federico@gmail.com>"]
 description = "A simple program to list the arguments passed on the command line."
 license = "BSD-3-Clause"
-edition = "2018"
+repository = "https://github.com/FedericoStra/argrs"
+categories = ["command-line-utilities"] # https://crates.io/category_slugs
+keywords = ["cli", "command", "arg", "args", "argument"]
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
