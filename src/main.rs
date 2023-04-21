@@ -1,3 +1,5 @@
+use std::io::{stdout, Write};
+
 fn main() {
     let args = std::env::args();
     let argc = args.len();
@@ -19,7 +21,9 @@ fn main() {
         0
     };
 
+    let mut stdout_lock = stdout().lock();
+
     for (i, arg) in args.enumerate() {
-        println!("{:width$}: `{}`", i, arg);
+        writeln!(stdout_lock, "{:width$}: `{}`", i, arg).unwrap();
     }
 }
